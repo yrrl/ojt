@@ -22,9 +22,15 @@ def main():
 
     items = data.get('itemListElement')
 
-    print(items)
-    for items in items[:-1]:
-        print(items)
+    for i, item in enumerate(items[:25]):
+    
+       item_name = item.get('item').get('name')
+       print(item)
+       #item_rating= item.get('ratingValue')
+       #item_genre= item.get('genre')
+      # print(str(i + 1) + " " + item_name +"\nGenre")
+
+   
 
 
 
