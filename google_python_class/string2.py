@@ -17,10 +17,12 @@
 # Return the resulting string.
 def verbing(s):
   # +++your code here+++
-  if len(s) > 3 and (s[s.find('ing')] == 'ing'):
+
+  if len(s) > 3 and s[-3:] == 'ing':
     return s+"ly"
-  if len(s) > 3 and (s[s.find('ing')] != 'ing'):
+  if len(s) > 3 and s[-3:] != 'ing':
     return s+"ing"
+  
   else: return s
 
 
@@ -34,7 +36,22 @@ def verbing(s):
 # This dinner is good!
 def not_bad(s):
   # +++your code here+++
-  return
+  temp = s.split()
+  for i in enumerate(temp):
+      print(i)
+  if 'bad' and 'not' in temp:
+    
+    #index1=temp.index("not")
+    #index2 = temp.index('bad')
+    #if index1 == index2 -1:
+     # temp[index1]=='good'
+     # del temp['bad']
+      return  " ".join(temp)
+  else: return s
+
+
+
+  
 
 
 # F. front_back
