@@ -26,9 +26,9 @@
 def donuts(count):
   # +++your code here+++
   if 10 <= count :
-    return "number of donuts: many" 
+    return "Number of donuts: many" 
   else:
-    return "number of donuts: " ,count
+    return "Number of donuts: " + str(count)
 
 # B. both_ends
 # Given a string s, return a string made of the first 2
@@ -57,7 +57,13 @@ def both_ends(s):
 # where all instances of stra have been replaced by strb.
 def fix_start(s):
   # +++your code here+++
-  return
+  index1 =s[0]
+  others = s[1:]
+  others = others.replace(index1,'*')
+  return index1 + others
+
+
+  
 
 
 # D. MixUp
@@ -69,7 +75,12 @@ def fix_start(s):
 # Assume a and b are length 2 or more.
 def mix_up(a, b):
   # +++your code here+++
-  return
+  temp1 = a[:2]
+  temp2 = b[:2]
+  
+  a = temp2 + a[2:]
+  b = temp1 + b[2:]
+  return a + " "+ b
 
 
 # Provided simple test() function used in main() to print
