@@ -36,17 +36,24 @@ def verbing(s):
 # This dinner is good!
 def not_bad(s):
   # +++your code here+++
-  temp = s.split()
-  for i in enumerate(temp):
-      print(i)
-  if 'bad' and 'not' in temp:
+  for string in s:
     
-    #index1=temp.index("not")
-    #index2 = temp.index('bad')
-    #if index1 == index2 -1:
-     # temp[index1]=='good'
-     # del temp['bad']
+    if string[-1:]=='!':
+      s=s[:-1]
+      
+  
+  temp = s.split()
+ 
+  if 'not' and 'bad' in temp:
+    
+    index1=temp.index("not")
+    
+    if temp.index("bad") > index1:
+      temp[index1] ='good'
+      temp = temp[:index1 + 1]
+      
       return  " ".join(temp)
+    else: return s
   else: return s
 
 
