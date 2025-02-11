@@ -29,7 +29,7 @@ def read_person(conn, stud_id):
 
 def update_name(conn, stud_id, name):
     cursor = conn.cursor()
-    cursor.execute("UPDATE studlist set firstname=%s WHERE id=%s", (name, stud_id))
+    cursor.execute("UPDATE studlist set firstname=%s WHERE id=%s", (name, str(stud_id)))
     print("name updated!!!!!!! ")
     cursor.execute("SELECT * FROM studlist where id=%s", str(stud_id))
     stud = cursor.fetchone()
@@ -47,10 +47,14 @@ if __name__ == "__main__":
         user="yrrel",
         password="11lordgrim"
     )
-    temp = read_person(conn,2)
+    
+    temp = read_person(conn,2)#check initial name
+    print(temp)
+    update = update_name(conn,2,'maria')
+    temp = read_person(conn,2)#check output
     print(temp)
 
-    update = update_name(conn,2,'maria')
+
     #update_name(conn,stud_id,name)
 
 
