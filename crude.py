@@ -31,6 +31,8 @@ def update_name(conn, stud_id, name):
     cursor = conn.cursor()
     cursor.execute("UPDATE studlist set firstname=%s WHERE id=%s", (name, str(stud_id)))
     print("name updated!!!!!!! ")
+    #uncomment this to save changes
+    # conn.commit()
     cursor.close()
 
 
@@ -38,6 +40,8 @@ def delete_stud(conn, stud_id):
     cursor = conn.cursor()
     cursor.execute("DELETE FROM studlist WHERE id=%s",str(stud_id))
     print("Student info deleted ;(")
+    #uncomment this to save changes
+    # conn.commit()
     cursor.close()
 
 
@@ -49,11 +53,11 @@ if __name__ == "__main__":
         password="11lordgrim"
     )
     
-    #temp = read_person(conn,2)#check initial name
-   # print(temp)
-    #update = update_name(conn,2,'maria')
-    #temp = read_person(conn,2)#check output
-    #print(temp)
+    temp = read_person(conn,2)#check initial name
+    print(temp)
+    update = update_name(conn,2,'maria')
+    temp = read_person(conn,2)#check output
+    print(temp)
     
     
     #delete
