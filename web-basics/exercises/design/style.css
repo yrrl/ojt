@@ -1,7 +1,7 @@
 img{
-    padding-top: 20px;
-    width: 100px !important;
-    border-radius: 60% !important;
+    padding-top: 30px;
+    height: 80px !important;
+    border-radius: 50% !important;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -12,11 +12,34 @@ section{
     text-align: center;
     border-radius: 3%;
     padding-bottom: 30px;
+    width: 400px;
 }
 
 button{
     background-color: rgb(168, 168, 168);
-    
-    height: 30px !important;
+    margin-bottom: 10px;
+    height: 30px ;
     width: 300px;
+    border-radius: 3px;
+    border: none;
+
+}
+h4.green{
+    font-size: smaller ;
+    color: greenyellow !important;
+    margin-top: 5px;
+    padding-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+h3,h4{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    margin-top: 20px;
+    padding-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+div.buttons{
+    margin-top: 15px;
 }
