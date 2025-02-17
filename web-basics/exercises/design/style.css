@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center; /* Centers the list horizontally */
+    align-items: center; /* Aligns vertically (if needed) */
+    padding: 0;
+    list-style: none;
+}
 img{
     padding-top: 30px;
     height: 80px !important;
@@ -9,11 +18,12 @@ img{
 
 }
 section{
-    background-color: rgb(68, 68, 68) ;
+    background-color: hsl(0, 0%, 12%) ;
     text-align: center;
     border-radius: 3%;
     padding-bottom: 30px;
     width: 400px;
+    
 }
 body {
     font-family: 'Inter', sans-serif;
@@ -31,28 +41,33 @@ h4.green{
 h3,h4{
 
     
-    color: rgb(228, 228, 228);
+    color: hsl(0, 0%, 100%);
     
     margin-top: 20px;
     padding-top: 0%;
     margin-bottom: 0%;
     padding-bottom: 0%;
+    font-weight: 400;
 }
 li{
     list-style: none;
     border: 2px solid ;
     padding-top: 15px;
     text-align: center;
-    background-color: rgb(100, 100, 100);
+    background-color: hsl(0, 0%, 20%);
     margin-bottom: 10px;
     height: 30px ;
     width: 300px;
-    border-radius: 3px;
+    border-radius: 8px;
     border: none;
     font: 100px;
     color: aliceblue;
-    font-weight: 400;
+    font-weight: 600;
 }
 ul{
+    padding-top: 10px;
     text-align: center;
+    
+    align-items: center;
+    
 }
