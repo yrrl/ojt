@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 img{
     padding-top: 30px;
     height: 80px !important;
@@ -14,17 +15,11 @@ section{
     padding-bottom: 30px;
     width: 400px;
 }
-
-button{
-    background-color: rgb(100, 100, 100);
-    margin-bottom: 10px;
-    height: 30px ;
-    width: 300px;
-    border-radius: 3px;
-    border: none;
-    font: 100px;
-    color: aliceblue;
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; /* Default weight */
 }
+
 h4.green{
     font-size: smaller ;
     color: greenyellow !important;
@@ -35,9 +30,7 @@ h4.green{
 }
 h3,h4{
 
-    font-weight: normal;
-
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
     color: rgb(228, 228, 228);
     
     margin-top: 20px;
@@ -45,6 +38,21 @@ h3,h4{
     margin-bottom: 0%;
     padding-bottom: 0%;
 }
-div.buttons{
-    margin-top: 15px;
+li{
+    list-style: none;
+    border: 2px solid ;
+    padding-top: 15px;
+    text-align: center;
+    background-color: rgb(100, 100, 100);
+    margin-bottom: 10px;
+    height: 30px ;
+    width: 300px;
+    border-radius: 3px;
+    border: none;
+    font: 100px;
+    color: aliceblue;
+    font-weight: 400;
+}
+ul{
+    text-align: center;
 }
