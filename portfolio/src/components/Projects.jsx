@@ -1,24 +1,24 @@
 function Projects() {
-  const projects = [
+  const sections = [
     {
-      title: "Project 1",
-      description: "A brief description of project 1",
-      image: "project1.jpg",
-      technologies: ["React", "Node.js", "MongoDB"],
+      title: "Vision & Goals",
+      description: "In 5 years, I aim to be a senior full-stack developer leading innovative projects. I'm passionate about creating technology that makes a positive impact.",
+      image: "https://placehold.co/600x400/2563eb/ffffff/png?text=Vision+2029",
+      items: ["Lead Developer", "Tech Mentor", "Open Source Contributor"],
       link: "#"
     },
     {
-      title: "Project 2",
-      description: "A brief description of project 2",
-      image: "project2.jpg",
-      technologies: ["React", "Firebase", "Tailwind"],
+      title: "Role Models",
+      description: "Inspired by tech leaders and innovators who've made a difference in the world through code and creativity.",
+      image: "https://placehold.co/600x400/2563eb/ffffff/png?text=Inspirations",
+      items: ["Ada Lovelace", "Linus Torvalds", "Grace Hopper"],
       link: "#"
     },
     {
-      title: "Project 3",
-      description: "A brief description of project 3",
-      image: "project3.jpg",
-      technologies: ["Vue.js", "Express", "PostgreSQL"],
+      title: "Hobbies & Interests",
+      description: "When I'm not coding, you'll find me exploring these passions that fuel my creativity and problem-solving skills.",
+      image: "https://placehold.co/600x400/2563eb/ffffff/png?text=Hobbies",
+      items: ["Photography", "Chess", "Reading Tech Blogs"],
       link: "#"
     }
   ]
@@ -26,27 +26,21 @@ function Projects() {
   return (
     <div className="py-20 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
+        <h2 className="text-4xl font-bold text-center mb-12">About My Journey</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+          {sections.map((section, index) => (
+            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img src={section.image} alt={section.title} className="w-full h-48 object-cover" />
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+                <h3 className="text-xl font-bold mb-2">{section.title}</h3>
+                <p className="text-gray-600 mb-4">{section.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech, i) => (
+                  {section.items.map((item, i) => (
                     <span key={i} className="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">
-                      {tech}
+                      {item}
                     </span>
                   ))}
                 </div>
-                <a 
-                  href={project.link} 
-                  className="text-blue-600 font-semibold hover:text-blue-800"
-                >
-                  View Project →
-                </a>
               </div>
             </div>
           ))}

@@ -5,7 +5,7 @@ function About() {
       <div className="flex flex-col md:flex-row items-center gap-8">
         <div className="w-full md:w-1/2">
           <img 
-            src="your-photo.jpg" 
+            src="https://placehold.co/400x400/png" 
             alt="Profile" 
             className="rounded-lg shadow-lg w-full"
           />
