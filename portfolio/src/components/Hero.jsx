@@ -6,14 +6,15 @@ function Hero() {
       className="h-screen flex items-center justify-center bg-cover bg-center"
       style={{ 
         backgroundImage: `url(${background})`,
-        backgroundColor: 'rgba(0,0,0,0.5)',
+        backgroundColor: 'rgba(17, 24, 39, 0.8)',
         backgroundBlendMode: 'overlay'
       }}
     >
-      <div className="text-center text-white">
-        <h1 className="text-6xl font-bold mb-4">John Lerry Fule</h1>
-        <h2 className="text-2xl mb-6">Intern at QRIO IT Solutions</h2>
-        <button className="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition duration-300">
+      <div className="text-center text-white z-10">
+        <h1 className="text-6xl font-bold mb-4 text-blue-400">John Lerry Fule</h1>
+        <h2 className="text-2xl mb-6 text-gray-300">Intern at QRIO IT Solutions</h2>
+        <button className="bg-gray-800 text-blue-400 px-6 py-3 rounded-full font-semibold 
+          hover:bg-gray-700 transition duration-300 border border-blue-500">
           View My Work
         </button>
       </div>

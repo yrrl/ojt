@@ -5,7 +5,7 @@ import Contact from './components/Contact'
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="bg-gray-900">
       <Hero />
       <About />
       <Projects />
