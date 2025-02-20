@@ -1,4 +1,4 @@
-from CRUD_API import Flask
+from flask import Flask
 
 app = Flask(__name__)
 
